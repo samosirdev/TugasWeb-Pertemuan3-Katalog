@@ -1,0 +1,446 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Book Verse</title>
+<link href="bootstrap-5.3.8-dist/css/bootstrap.min.css" rel="stylesheet">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Sora:wght@400;600;700;800&family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+<nav class="navbar navbar-expand-lg navbar-bv sticky-top py-3">
+  <div class="container">
+    <a class="navbar-brand d-flex align-items-center gap-2" href="#">
+      <img src="gambar/logo.png" alt="logo" class="brand-icon">
+      <span class="fw-bold text-white fs-5" style="font-family:'Sora',sans-serif;">BookVerse</span>
+    </a>
+
+    <button class="navbar-toggler border-0 text-white" type="button" data-bs-toggle="collapse" data-bs-target="#bvNav" aria-controls="bvNav" aria-expanded="false" aria-label="Toggle navigation">
+      <i class="bi bi-list"></i>
+    </button>
+
+    <div class="collapse navbar-collapse" id="bvNav">
+      <ul class="navbar-nav mx-auto mt-3 mt-lg-0 gap-lg-4 text-center">
+        <li class="nav-item"><a class="nav-link active" href="#beranda">Home</a></li>
+        <li class="nav-item"><a class="nav-link" href="#populer">Buku</a></li>
+        <li class="nav-item"><a class="nav-link" href="#komik">Komik</a></li>
+        <li class="nav-item"><a class="nav-link" href="#kategori">Kategori</a></li>
+        <li class="nav-item"><a class="nav-link" href="#footer">Tentang</a></li>
+      </ul>
+    </div>
+  </div>
+</nav>
+
+<header id="beranda" class="hero-section">
+  <div class="hero-glow"></div>
+  <div class="container position-relative">
+    <div class="row align-items-center g-4 g-lg-5">
+      <div class="col-12 col-lg-6">
+        <p class="eyebrow mb-2"><i class="bi bi-stars"></i> Read. Explore. Discover.</p>
+        <h1 class="hero-title mb-3 text-white">Temukan Cerita <span class="text-gradient">Favoritmu</span> di Sini!</h1>
+        <p class="hero-lead mb-4" style="max-width:520px;">
+          Jelajahi ribuan buku dan komik dari berbagai genre dalam satu tempat. Baca, belajar, dan berimajinasi tanpa batas.
+        </p>
+
+        <form class="search-input-group d-flex align-items-center mb-4" style="max-width:480px;" role="search">
+          <span class="ps-3 text-secondary"><i class="bi bi-search"></i></span>
+          <input type="search" class="form-control py-2 px-2" placeholder="Cari judul buku, penulis, atau komik...">
+          <button class="btn rounded-circle m-1" type="submit" style="width:38px;height:38px;" aria-label="Cari">
+            <i class="bi bi-search"></i>
+          </button>
+        </form>
+
+        <a href="#populer" class="btn btn-bv-primary">Jelajahi Katalog <i class="bi bi-arrow-right ms-1"></i></a>
+      </div>
+
+      <div class="col-12 col-lg-6">
+        <div class="hero-illustration">
+          <i class="bi bi-book position-absolute top-50 start-50 translate-middle"></i>
+          <p class="hero-quote mb-0">Good Books,<br>Better Days.</p>
+           <img src="gambar/buku1.jpg" alt="Cover buku Atomic Habits" loading="lazy">
+        </div>
+      </div>
+    </div>
+  </div>
+</header>
+
+<section id="kategori" class="section-pad">
+  <div class="container">
+    <div class="d-flex justify-content-between align-items-end mb-4">
+      <div>
+        <h2 class="section-title text-white mb-1"><i class="bi bi-compass text-primary"></i> Jelajahi Kategori</h2>
+        <p class="text-secondary mb-0">Pilih kategori favoritmu dan temukan cerita yang sesuai dengan seleramu.</p>
+      </div>
+      <a href="#populer" class="text-secondary d-none d-md-inline">Lihat Semua &rarr;</a>
+    </div>
+
+    <div class="row g-3 row-cols-2 row-cols-md-3 row-cols-lg-6">
+      <div class="col"><a href="#populer" class="category-card cat-novel d-block"><i class="bi bi-journal-bookmark"></i>Novel</a></div>
+      <div class="col"><a href="#komik" class="category-card cat-manga d-block"><i class="bi bi-emoji-laughing"></i>Manga</a></div>
+      <div class="col"><a href="#komik" class="category-card cat-komik d-block"><i class="bi bi-book"></i>Komik</a></div>
+      <div class="col"><a href="#populer" class="category-card cat-fantasi d-block"><i class="bi bi-stars"></i>Fantasi</a></div>
+      <div class="col"><a href="#populer" class="category-card cat-romance d-block"><i class="bi bi-heart"></i>Romance</a></div>
+      <div class="col"><a href="#populer" class="category-card cat-horror d-block"><i class="bi bi-moon-stars"></i>Horror</a></div>
+    </div>
+  </div>
+</section>
+
+<section id="populer" class="section-pad">
+  <div class="container">
+    <div class="d-flex justify-content-between align-items-end mb-4">
+      <div>
+        <h2 class="section-title text-white mb-1"><i class="bi bi-fire text-danger"></i> Buku Populer</h2>
+        <p class="text-secondary mb-0">Pilihan terbaik yang banyak dibaca pembaca lain.</p>
+      </div>
+      <a href="#" class="text-secondary d-none d-md-inline">Lihat Semua &rarr;</a>
+    </div>
+
+    <div class="row g-3 g-lg-4 row-cols-1 row-cols-md-2 row-cols-lg-3 row-cols-xl-4">
+
+      <div class="col">
+        <div class="product-card">
+          <div class="product-thumb-wrap">
+            <span class="badge-tag badge-top">Top Rated</span>
+            <button class="fav-btn" aria-label="Favorit"><i class="bi bi-heart"></i></button>
+            <img src="gambar/Atomic Habits.jpg" alt="Cover buku Atomic Habits" loading="lazy">
+          </div>
+          <div class="product-body">
+            <p class="product-genre">Self Improvement</p>
+            <h3 class="product-title">Atomic Habits</h3>
+            <p class="product-author">James Clear</p>
+            <p class="product-rating"><i class="bi bi-star-fill"></i> 4.9</p>
+            <p class="product-price">Rp85.000</p>
+            <button class="btn btn-detail">Lihat Detail</button>
+          </div>
+        </div>
+      </div>
+
+      <div class="col">
+        <div class="product-card">
+          <div class="product-thumb-wrap">
+            <span class="badge-tag badge-popular">Popular</span>
+            <button class="fav-btn" aria-label="Favorit"><i class="bi bi-heart"></i></button>
+            <img src="gambar/Laut Bercerita _ Leila S_ Chudori ₊⊹.jpg" alt="Cover buku Laut Bercerita" loading="lazy">
+          </div>
+          <div class="product-body">
+            <p class="product-genre">Novel</p>
+            <h3 class="product-title">Laut Bercerita</h3>
+            <p class="product-author">Leila S. Chudori</p>
+            <p class="product-rating"><i class="bi bi-star-fill"></i> 4.8</p>
+            <p class="product-price">Rp75.000</p>
+            <button class="btn btn-detail">Lihat Detail</button>
+          </div>
+        </div>
+      </div>
+
+      <div class="col">
+        <div class="product-card">
+          <div class="product-thumb-wrap">
+            <span class="badge-tag badge-new">New</span>
+            <button class="fav-btn" aria-label="Favorit"><i class="bi bi-heart"></i></button>
+            <img src="gambar/download.jpg" alt="Cover komik Demon Slayer 01" loading="lazy">
+          </div>
+          <div class="product-body">
+            <p class="product-genre">Manga</p>
+            <h3 class="product-title">Demon Slayer 01</h3>
+            <p class="product-author">Koyoharu Gotouge</p>
+            <p class="product-rating"><i class="bi bi-star-fill"></i> 4.7</p>
+            <p class="product-price">Rp45.000</p>
+            <button class="btn btn-detail">Lihat Detail</button>
+          </div>
+        </div>
+      </div>
+
+      <div class="col">
+        <div class="product-card">
+          <div class="product-thumb-wrap">
+            <span class="badge-tag badge-hot">Hot</span>
+            <button class="fav-btn" aria-label="Favorit"><i class="bi bi-heart"></i></button>
+            <img src="gambar/Cantik Itu Luka _ Eka Kurniawan ₊⊹.jpg" loading="lazy">
+          </div>
+          <div class="product-body">
+            <p class="product-genre">Novel</p>
+            <h3 class="product-title">Cantik Itu Luka</h3>
+            <p class="product-author">Tere Liye</p>
+            <p class="product-rating"><i class="bi bi-star-fill"></i> 4.7</p>
+            <p class="product-price">Rp68.000</p>
+            <button class="btn btn-detail">Lihat Detail</button>
+          </div>
+        </div>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+<!-- ============ BOOK OF THE DAY ============ -->
+<section class="section-pad pt-0">
+  <div class="container">
+    <div class="botd-section p-4 p-lg-5">
+      <div class="row align-items-center g-4">
+        <div class="col-12 col-md-3 text-center">
+          <img class="botd-cover" src="gambar/Atomic Habits.jpg" alt="Cover Atomic Habits, Book of the Day">
+        </div>
+        <div class="col-12 col-md-6">
+          <p class="botd-badge mb-2"><i class="bi bi-award-fill"></i> Book of the Day</p>
+          <h3 class="text-white fw-bold mb-1" style="font-family:'Sora',sans-serif;">Atomic Habits</h3>
+          <p class="text-secondary mb-2">James Clear</p>
+          <p class="mb-3"><i class="bi bi-star-fill text-warning"></i> 4.9 / 5</p>
+          <p class="fst-italic text-secondary mb-4">"Perubahan kecil yang konsisten akan memberikan hasil yang luar biasa."</p>
+          <a href="#" class="btn btn-bv-primary btn-sm">Baca Selengkapnya <i class="bi bi-arrow-right"></i></a>
+        </div>
+        <div class="col-12 col-md-3 text-center d-none d-md-block">
+          <i class="bi bi-journal-richtext" style="font-size:5rem;color:rgba(229,231,235,.25);"></i>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section id="komik" class="section-pad">
+  <div class="container">
+    <div class="d-flex justify-content-between align-items-end mb-4">
+      <div>
+        <h2 class="section-title text-white mb-1"><i class="bi bi-collection text-success"></i> Komik Pilihan</h2>
+        <p class="text-secondary mb-0">Komik terbaik yang wajib kamu baca minggu ini.</p>
+      </div>
+      <a href="#" class="text-secondary d-none d-md-inline">Lihat Semua &rarr;</a>
+    </div>
+
+    <div class="row g-3 g-lg-4 row-cols-1 row-cols-md-2 row-cols-lg-3 row-cols-xl-4">
+
+      <div class="col">
+        <div class="product-card">
+          <div class="product-thumb-wrap">
+            <span class="badge-tag badge-popular">Populer</span>
+            <button class="fav-btn" aria-label="Favorit"><i class="bi bi-heart"></i></button>
+            <img src="gambar/ONE PIECE VOLUME 113 COVER.jpg" alt="Cover komik One Piece Vol. 1" loading="lazy">
+          </div>
+          <div class="product-body">
+            <p class="product-genre">Manga</p>
+            <h3 class="product-title">One Piece Vol. 1</h3>
+            <p class="product-author">Eiichiro Oda</p>
+            <p class="product-rating"><i class="bi bi-star-fill"></i> 4.9</p>
+            <p class="product-price">Rp40.000</p>
+            <button class="btn btn-detail">Lihat Detail</button>
+          </div>
+        </div>
+      </div>
+
+      <div class="col">
+        <div class="product-card">
+          <div class="product-thumb-wrap">
+            <span class="badge-tag badge-hot">Trending</span>
+            <button class="fav-btn" aria-label="Favorit"><i class="bi bi-heart"></i></button>
+            <img src="gambar/Poster jujutsu kaisen chapter 1.jpg" alt="Cover komik Jujutsu Kaisen Vol. 1" loading="lazy">
+          </div>
+          <div class="product-body">
+            <p class="product-genre">Manga</p>
+            <h3 class="product-title">Jujutsu Kaisen Vol. 1</h3>
+            <p class="product-author">Gege Akutami</p>
+            <p class="product-rating"><i class="bi bi-star-fill"></i> 4.8</p>
+            <p class="product-price">Rp42.000</p>
+            <button class="btn btn-detail">Lihat Detail</button>
+          </div>
+        </div>
+      </div>
+
+      <div class="col">
+        <div class="product-card">
+          <div class="product-thumb-wrap">
+            <span class="badge-tag badge-new">New</span>
+            <button class="fav-btn" aria-label="Favorit"><i class="bi bi-heart"></i></button>
+            <img src="gambar/poster de attack On Titan.jpg" alt="Cover komik Attack on Titan Vol. 1" loading="lazy">
+          </div>
+          <div class="product-body">
+            <p class="product-genre">Manga</p>
+            <h3 class="product-title">Attack on Titan Vol. 1</h3>
+            <p class="product-author">Hajime Isayama</p>
+            <p class="product-rating"><i class="bi bi-star-fill"></i> 4.7</p>
+            <p class="product-price">Rp43.000</p>
+            <button class="btn btn-detail">Lihat Detail</button>
+          </div>
+        </div>
+      </div>
+
+      <div class="col">
+        <div class="product-card">
+          <div class="product-thumb-wrap">
+            <span class="badge-tag badge-hot">Hot</span>
+            <button class="fav-btn" aria-label="Favorit"><i class="bi bi-heart"></i></button>
+            <img src="gambar/Solo Leveling Volume 1 (Paperback) – Amazon Link.jpg" alt="Cover komik Solo Leveling Vol. 1" loading="lazy">
+          </div>
+          <div class="product-body">
+            <p class="product-genre">Manhwa</p>
+            <h3 class="product-title">Solo Leveling Vol. 1</h3>
+            <p class="product-author">Chugong</p>
+            <p class="product-rating"><i class="bi bi-star-fill"></i> 4.8</p>
+            <p class="product-price">Rp48.000</p>
+            <button class="btn btn-detail">Lihat Detail</button>
+          </div>
+        </div>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+<!-- ============ TOP RATED BOOKS ============ -->
+<section class="section-pad pt-0">
+  <div class="container">
+    <div class="d-flex justify-content-between align-items-end mb-4">
+      <div>
+        <h2 class="section-title text-white mb-1"><i class="bi bi-star text-warning"></i> Top Rated Books</h2>
+        <p class="text-secondary mb-0">Buku dengan rating tertinggi dari pembaca.</p>
+      </div>
+      <a href="#" class="text-secondary d-none d-md-inline">Lihat Semua &rarr;</a>
+    </div>
+
+    <div class="row g-2 g-lg-3 row-cols-3 row-cols-md-4 row-cols-lg-6">
+      <div class="col">
+        <div class="mini-card">
+          <img class="mini-thumb" src="gambar/dune.jpg" alt="Cover buku Dune" loading="lazy">
+          <div class="mini-body">
+            <p class="mini-title">Dune</p>
+            <p class="mini-rating mb-0"><i class="bi bi-star-fill"></i> 4.8</p>
+          </div>
+        </div>
+      </div>
+      <div class="col">
+        <div class="mini-card">
+          <img class="mini-thumb" src="gambar/buku psikologi.jpg" alt="Cover buku Psychology of Money" loading="lazy">
+          <div class="mini-body">
+            <p class="mini-title">Psychology of Money</p>
+            <p class="mini-rating mb-0"><i class="bi bi-star-fill"></i> 4.8</p>
+          </div>
+        </div>
+      </div>
+      <div class="col">
+        <div class="mini-card">
+          <img class="mini-thumb" src="gambar/sapiens.jpg" alt="Cover buku Sapiens" loading="lazy">
+          <div class="mini-body">
+            <p class="mini-title">Sapiens</p>
+            <p class="mini-rating mb-0"><i class="bi bi-star-fill"></i> 4.9</p>
+          </div>
+        </div>
+      </div>
+      <div class="col">
+        <div class="mini-card">
+          <img class="mini-thumb" src="gambar/1984.jpg" alt="Cover buku 1984" loading="lazy">
+          <div class="mini-body">
+            <p class="mini-title">1984</p>
+            <p class="mini-rating mb-0"><i class="bi bi-star-fill"></i> 4.8</p>
+          </div>
+        </div>
+      </div>
+      <div class="col">
+        <div class="mini-card">
+          <img class="mini-thumb" src="gambar/the alchemist.jpg" alt="Cover buku The Alchemist" loading="lazy">
+          <div class="mini-body">
+            <p class="mini-title">The Alchemist</p>
+            <p class="mini-rating mb-0"><i class="bi bi-star-fill"></i> 4.7</p>
+          </div>
+        </div>
+      </div>
+      <div class="col">
+        <div class="mini-card">
+          <img class="mini-thumb" src="gambar/filosofi teras.jpg" alt="Cover buku Filosofi Teras" loading="lazy">
+          <div class="mini-body">
+            <p class="mini-title">Filosofi Teras</p>
+            <p class="mini-rating mb-0"><i class="bi bi-star-fill"></i> 4.7</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ============ FOOTER ============ -->
+<footer id="footer" class="footer-bv">
+  <div class="container">
+    <div class="row g-4">
+      <div class="col-12 col-md-4">
+        <a class="d-flex align-items-center gap-2 mb-3" href="#">
+          <img src="gambar/logo.png" alt="logo" class="brand-icon">
+          <span class="fw-bold text-white fs-5" style="font-family:'Sora',sans-serif;">BookVerse</span>
+        </a>
+        <p class="text-secondary" style="max-width:280px;">Read. Explore. Discover. Temukan ribuan buku dan komik favoritmu dalam satu tempat.</p>
+      </div>
+
+      <div class="col-6 col-md-2">
+        <h6>Navigasi</h6>
+        <a href="#beranda">Home</a>
+        <a href="#populer">Buku</a>
+        <a href="#komik">Komik</a>
+        <a href="#kategori">Kategori</a>
+      </div>
+
+      <div class="col-6 col-md-3">
+        <h6>Informasi</h6>
+        <a href="#">Tentang Kami</a>
+        <a href="#">Kontak</a>
+        <a href="#">FAQ</a>
+        <a href="#">Kebijakan Privasi</a>
+      </div>
+
+      <div class="col-12 col-md-3">
+    <h6>Follow Us</h6>
+
+    <div class="social-item-row">
+        <a class="social-icon"
+           href="https://wa.me/qr/T6U54EX7FNCQL1"
+           aria-label="WhatsApp">
+            <img src="gambar/whatshap.jpg"
+                 alt="WhatsApp"
+                 class="social-item">
+        </a>
+        <a href="https://wa.me/qr/T6U54EX7FNCQL1"><span>WhatsApp</span></a>
+    </div>
+
+    <div class="social-item-row">
+        <a class="social-icon" href="#" aria-label="TikTok">
+            <img src="gambar/rokrok.jpg"
+                 alt="TikTok"
+                 class="social-item">
+        </a>
+        <span>TikTok</span>
+    </div>
+
+    <div class="social-item-row">
+        <a class="social-icon" href="https://www.instagram.com/smurf03_?stkn=MXUycHAzN2o1NGxuOA==" aria-label="Instagram">
+            <img src="gambar/igoy.jpg"
+                 alt="Instagram"
+                 class="social-item">
+        </a>
+        <a href="https://www.instagram.com/smurf03_?stkn=MXUycHAzN2o1NGxuOA=="><span>Instagram</span></a>
+    </div>
+
+    <div class="social-item-row">
+        <a class="social-icon" href="https://github.com/samosirdev?tab=repositories" aria-label="GitHub">
+            <img src="gambar/github.jpg"
+                 alt="GitHub"
+                 class="social-item">
+        </a>
+        <a href="https://github.com/samosirdev?tab=repositories"><span>GitHub</span></a>
+    </div>
+</div>
+
+    <hr class="mt-4" style="border-color: var(--bv-border);">
+    <p class="text-secondary text-center small mb-0">&copy; 2026 BookVerse. All Rights Reserved.</p>
+  </div>
+</footer>
+
+<!-- ============ MOBILE BOTTOM NAV ============
+<nav class="bottom-nav d-lg-none">
+  <a href="#beranda" class="active"><i class="bi bi-house"></i>Home</a>
+  <a href="#populer"><i class="bi bi-journal-bookmark"></i>Buku</a>
+  <a href="#komik"><i class="bi bi-book"></i>Komik</a>
+  <a href="#kategori"><i class="bi bi-grid"></i>Kategori</a>
+  <a href="#footer"><i class="bi bi-person"></i>Akun</a>
+</nav> -->
+
+</body>
+<script src="bootstrap-5.3.8-dist/js/bootstrap.bundle.min.js"></script>
+</html>
